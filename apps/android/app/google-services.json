@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "218831972818",
+    "project_id": "thenobody-29249",
+    "storage_bucket": "thenobody-29249.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218831972818:android:815c636bc6388d037e000b",
+        "android_client_info": {
+          "package_name": "vc.thenobody"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyG_mKhzxQqVRIc1oBWMkeTfWz-nK7xKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

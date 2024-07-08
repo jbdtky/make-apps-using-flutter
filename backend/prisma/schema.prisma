@@ -1,0 +1,34 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["orderByNulls", "fullTextSearch"]
+  output          = "../node_modules/.prisma/client"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id         String   @id @default(uuid()) @db.Uuid
+  createdAt  DateTime @default(now())
+  lastSeenAt DateTime @default(now())
+  locale     String   @default("en")
+  role       String?
+  fcmToken   String?
+
+  email String @unique
+
+  username    String?
+  dateOfBirth DateTime?
+
+  pictureUrl          String?
+  thumbnailPictureUrl String?
+
+  referralUserId String? @db.Uuid
+  referralUser   User?   @relation(name: "referral", fields: [referralUserId], references: [id])
+  referrees      User[]  @relation(name: "referral")
+}

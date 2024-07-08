@@ -1,0 +1,6 @@
+git_url("https://github.com/jbdtky/thenobody-ios-certificates.git")
+
+storage_mode("git")
+
+app_identifier(["vc.thenobody"])
+username("jb@yourhue.app") # Your Apple Developer Portal username

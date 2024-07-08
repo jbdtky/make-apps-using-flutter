@@ -1,0 +1,8 @@
+app_identifier("vc.thenobody") # The bundle identifier of your app
+apple_id("jb@yourhue.app") # Your Apple email address
+
+itc_team_id("114099802") # App Store Connect Team ID
+team_id("9PSG2K2YC9") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile
